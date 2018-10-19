@@ -1,0 +1,146 @@
+/* Estilo para el bloque de tips en el front */
+/*
+
+@font-face {font-family: "Oswald";
+    src: url("//db.onlinewebfonts.com/t/d40bbce8f4b00a569beac2454b69231e.eot");
+    src: url("//db.onlinewebfonts.com/t/d40bbce8f4b00a569beac2454b69231e.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d40bbce8f4b00a569beac2454b69231e.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/d40bbce8f4b00a569beac2454b69231e.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/d40bbce8f4b00a569beac2454b69231e.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/d40bbce8f4b00a569beac2454b69231e.svg#Oswald") format("svg");
+}
+*/
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Oswald.woff'), url('../fonts/Oswald.woff') format('woff');
+}
+
+
+/* no front */
+
+.view-id-tips .views-field-field-image img{
+    display:none;
+}
+
+.view-id-tips .views-field-title{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #fff;
+    min-height: 100%;
+}
+
+.view-id-tips * {
+    margin: 0;
+    padding: 0;
+}
+
+.view-id-tips *,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* fin no front */
+
+
+#block-views-tips-front-block{
+    position: relative;
+    z-index: 1;
+}
+
+.view-id-tips_front .views-field-field-image img{
+    display:none;
+}
+
+.view-id-tips_front .views-field-title{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #fff;
+    min-height: 100%;
+}
+
+.view-id-tips_front * {
+    margin: 0;
+    padding: 0;
+}
+
+.view-id-tips_front *,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Clip text element */
+.clip-text {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin: .25em;
+    padding: .75em .75em;
+    text-align: center;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text a {
+  -webkit-text-stroke-color:rgba(0, 0, 0, 0.4);
+  -webkit-text-stroke-width: 0.05px;
+/*
+  -webkit-text-stroke-width: 1.2px;
+*/
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: .25em;
+    right: .25em;
+    bottom: .25em;
+    left: .25em;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+    background-position: -.65em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
