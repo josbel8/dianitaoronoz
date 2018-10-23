@@ -474,3 +474,28 @@
     }
 
 }
+
+/*
+@media only screen and (max-width : 1024px) {
+
+    ul#supersized {
+        display: none;
+    }
+
+    .header {
+      background: none;
+    }
+
+    .homebanner {
+        height: 350px;
+        min-height: 350px;
+        padding-top:20px;
+        text-align: center;
+        background: url(../images/bg-mobile.jpg);
+    }
+
+    #home-block-two {
+        background: url(../images/bg-mobile.jpg);
+    }
+*/
+}

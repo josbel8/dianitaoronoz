@@ -1472,6 +1472,7 @@ ol.search-results {
 
 #footer-area .column:last-child {
   float: right;
+  margin-top: 10px;
 }
 
 #top-area .column-title {
@@ -2748,7 +2749,7 @@ div.warning {
     font-size: 1.2em;
     letter-spacing: 0.1em;
     color: #fff;
-    padding-top: 14px;
+    margin-top: 5px;
 }
 
 #footer #block-footer-sitemap-footer-sitemap {
@@ -2762,7 +2763,7 @@ div.warning {
   text-decoration: none;
   line-height: 100%;
   white-space: nowrap;
-  font-size: 0.55em;
+  font-size: 0.6em;
   color: #fff;
 }
 
@@ -2785,10 +2786,15 @@ div.warning {
 }
 
 #footer img {
-    width: 13%;
+    width: 25%;
     margin-top: 5px;
     margin-right: 5px;
     float: left;
+}
+
+#footer .social {
+    float: right;
+    width: 50%;
 }
 
 #footer .social ul {
@@ -2925,7 +2931,7 @@ div.warning {
 
 /* footer sitemap */
 #footer-sitemap {
-    margin: 5px 1em;
+    margin-top: 5px;
 }
 
 .content .node-blog p{
